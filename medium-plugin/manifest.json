@@ -1,0 +1,51 @@
+{
+  "manifest_version": 2,
+
+  "name": "Medium Auto-Request Plugin",
+  "description": "Medium plugin to auto request stories - Elysian ",
+  "version": "1.1",
+  "options_page": "options.html",
+
+  "icons":
+   {
+      "128": "images/icon128.png",
+      "16": "images/icon16.png",
+      "48": "images/icon48.png"
+   },
+
+  "browser_action": {
+    "default_popup": "popup.html",
+    "default_title": "Request Story"
+  },
+
+  "background": {
+    "scripts": [
+      "js/background.js",
+      "js/utils.js"
+    ]
+  },
+  "content_scripts": [
+    {
+    "matches": [
+        "http://*/*",
+        "https://*/*"
+      ],
+    "js": ["js/inject.js"],
+    "css": [
+        "stylesheets/injected.css"
+      ]
+    }
+  ],
+  "permissions": [
+    "activeTab",
+    "storage",
+    "https://ajax.googleapis.com/",
+    "<all_urls>",
+    "webRequest",
+    "webRequestBlocking"
+  ],
+  "web_accessible_resources": [
+      "stylesheets/injected.css",
+      "images/*"
+    ]
+}

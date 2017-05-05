@@ -1,0 +1,120 @@
+// settings.scss
+
+@import 'materialize';
+@import 'overrides';
+
+body {
+    background: #eee;
+}
+
+.top-fixed-area {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 190px;
+    z-index: -1;
+    @extend .green;
+    @extend .lighten-1;
+}
+
+.navigation {
+    &-bar {
+        position: absolute;
+        left: 0;
+        top: 0;
+        padding: 20px;
+        z-index: 1;
+    }
+
+    &-title {
+        margin: 0;
+        padding: 0;
+        color: white;
+        font-size: 16pt;
+    }
+}
+
+.content {
+    display: flex;
+    margin-top: 150px;
+    padding-bottom: 50px;
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+}
+
+.account-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 20px;
+
+    &-profile-picture {
+        width: 65px;
+        height: 65px;
+        border-radius: 50%;
+        background: gray;
+    }
+
+    &-name {
+        margin-left: 20px;
+        font-size: 12pt;
+        @extend .green-text;
+        @extend .text-lighten-1;
+    }
+
+    &-arrow-button {
+        display: flex;
+        margin-left: auto;
+        @extend .green-text;
+        @extend .text-lighten-1;
+    }
+}
+
+.default-publication-content {
+    margin-top: 20px;
+    margin-bottom: 0;
+    padding: 0;
+
+    &-form {
+        padding: 0;
+        margin: 0;
+    }
+
+    &-bottom-section {
+        display: flex;
+        margin-top: 20px;
+        margin-bottom: 0;
+        padding-top: 20px;
+        padding-bottom: 0;
+        align-items: center;
+        border-top: 1px solid #eee;
+    }
+}
+
+.email-templates-content {
+    margin-top: 20px;
+    margin-bottom: 0;
+    padding: 0;
+
+    &-select-field {
+        width: 40%;
+    }
+
+    &-buttons-container {
+        margin-top: 5px;
+    }
+
+    &-button {
+        margin-right: 25px;
+        font-size: 12pt;
+        font-weight: 500;
+    }
+}

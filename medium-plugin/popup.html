@@ -1,0 +1,45 @@
+<head>
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="stylesheets/materialize.css"  media="screen,projection"/>
+    <link rel="stylesheet" href="stylesheets/popup.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+</head>
+<body>
+    <script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="js/materialize.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript" src="js/popup.js"></script>
+    
+    <div class="window-container">
+        <form class="form" action="">
+            <div class="top-section">
+                <div class="top-section-header-container">
+                    <h1 class="top-section-header-title">Medium Auto-Request</h1>
+                    <i id="settings" class="top-section-header-settings material-icons">settings</i>
+                </div>
+            </div>
+            <div class="bottom-section" id="test">
+                <div id="bottom-container" class="bottom-section-fields-container">
+                    <i id="add-post" class="bottom-section-add material-icons">library add</i>
+
+                    <div class="input-field">
+                        <input placeholder="Story 1" id="story-1" type="url">
+                        <label>Medium stories</label>
+                    </div>
+                    <div id="extra-stories"></div>
+                    <button id="submit-posts" class="bottom-section-submit-button btn waves-effect waves-light" type="submit" name="action">
+                    Requests Stories
+                    </button>
+                    <br><br>
+                    <div class="input-field">
+                        <input placeholder="Spreadsheet URL" id="spreadsheet_url" type="url">
+                        <label>OR Submit a Google Spreadsheet</label>
+                    </div>
+                    <button id="submit-spreadsheet" class="bottom-section-submit-button btn waves-effect waves-light" type="submit" name="action">
+                        Submit Spreadsheet
+                    </button>
+                </div>
+            </div>
+        </form>
+    </div>    
+</body>

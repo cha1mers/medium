@@ -1,0 +1,277 @@
+.medium-plugin-request-button {
+	position: relative;
+	font-size: 14px;
+	vertical-align: baseline;
+	bottom: 100px;
+  float: right;
+}
+
+.medium-plugin-request-button-img {
+	position: relative;
+	font-size: 14px;
+	vertical-align: baseline;
+	bottom: 100px;
+	padding-left: 10px;
+	display: none;
+  float: right;
+}
+
+.medium-plugin-home-request-button {
+  position: relative;
+  font-size: 14px;
+  vertical-align: baseline;
+  float: right;
+}
+
+.medium-plugin-home-request-button-img {
+  position: relative;
+  font-size: 14px;
+  vertical-align: baseline;
+  padding-left: 10px;
+  display: none;
+  float: right;
+}
+
+.medium-plugin-select {
+  margin-left: 10px;
+}
+
+/* line 2, ../sass/components/_buttons.scss */
+.medium-plugin-button.btn {
+  border: none;
+  border-radius: 2px;
+  display: inline-block;
+  height: 36px;
+  line-height: 36px;
+  padding: 0 1rem;
+  text-transform: uppercase;
+  vertical-align: middle;
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* line 17, ../sass/components/_buttons.scss */
+.medium-plugin-button.btn.disabled, .medium-plugin-button.disabled.btn-large,
+.medium-plugin-button.btn-floating.disabled,
+.medium-plugin-button.btn-large.disabled,
+.medium-plugin-button.btn-flat.disabled,
+.medium-plugin-button.btn:disabled,
+.medium-plugin-button.btn-large:disabled,
+.medium-plugin-button.btn-floating:disabled,
+.medium-plugin-button.btn-large:disabled,
+.medium-plugin-button.btn-flat:disabled,
+.medium-plugin-button.btn[disabled],
+[disabled].medium-plugin-button.btn-large,
+.medium-plugin-button.btn-floating[disabled],
+.medium-plugin-button.btn-large[disabled],
+.medium-plugin-button.btn-flat[disabled] {
+  pointer-events: none;
+  background-color: #DFDFDF !important;
+  box-shadow: none;
+  color: #9F9F9F !important;
+  cursor: default;
+}
+/* line 35, ../sass/components/_buttons.scss */
+.medium-plugin-button.btn.disabled:hover, .disabled.btn-large:hover,
+.medium-plugin-button.btn-floating.disabled:hover,
+.medium-plugin-button.btn-large.disabled:hover,
+.medium-plugin-button.btn-flat.disabled:hover,
+.medium-plugin-button.btn:disabled:hover,
+.medium-plugin-button.btn-large:disabled:hover,
+.medium-plugin-button.btn-floating:disabled:hover,
+.medium-plugin-button.btn-large:disabled:hover,
+.medium-plugin-button.btn-flat:disabled:hover,
+.medium-plugin-button.btn[disabled]:hover,
+[disabled].medium-plugin-button.btn-large:hover,
+.medium-plugin-button.btn-floating[disabled]:hover,
+.medium-plugin-button.btn-large[disabled]:hover,
+.medium-plugin-button.btn-flat[disabled]:hover {
+  background-color: #DFDFDF !important;
+  color: #9F9F9F !important;
+}
+
+/* line 42, ../sass/components/_buttons.scss */
+.medium-plugin-button.btn{
+  outline: 0;
+}
+/* line 49, ../sass/components/_buttons.scss */
+.medium-plugin-button.btn i{
+  font-size: 1.3rem;
+  line-height: inherit;
+}
+
+/* line 58, ../sass/components/_buttons.scss */
+.medium-plugin-button.btn:focus, .medium-plugin-button.btn-large:focus,
+.btn-floating:focus {
+  background-color: #49a54e;
+}
+
+/* line 64, ../sass/components/_buttons.scss */
+.medium-plugin-button.btn, .medium-plugin-button.btn-large {
+  text-decoration: none;
+  color: #fff;
+  background-color: #66BB6A;
+  text-align: center;
+  letter-spacing: .5px;
+  transition: .2s ease-out;
+  cursor: pointer;
+}
+/* line 74, ../sass/components/_buttons.scss */
+.medium-plugin-button.btn:hover, .medium-plugin-button.btn-large:hover {
+  background-color: #78c37b;
+}
+
+/* line 81, ../sass/components/_buttons.scss */
+.medium-plugin-button.btn-floating {
+  display: inline-block;
+  color: #fff;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  padding: 0;
+  background-color: #66BB6A;
+  border-radius: 50%;
+  transition: .3s;
+  cursor: pointer;
+  vertical-align: middle;
+}
+
+
+/*!
+ * Waves v0.6.0
+ * http://fian.my.id/Waves
+ *
+ * Copyright 2014 Alfiana E. Sibuea and other contributors
+ * Released under the MIT license
+ * https://github.com/fians/Waves/blob/master/LICENSE
+ */
+/* line 12, ../sass/components/_waves.scss */
+.waves-effect {
+  position: relative;
+  cursor: pointer;
+  display: inline-block;
+  overflow: hidden;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+  vertical-align: middle;
+  z-index: 1;
+  transition: .3s ease-out;
+}
+/* line 23, ../sass/components/_waves.scss */
+.waves-effect .waves-ripple {
+  position: absolute;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  margin-top: -10px;
+  margin-left: -10px;
+  opacity: 0;
+  background: rgba(0, 0, 0, 0.2);
+  transition: all 0.7s ease-out;
+  transition-property: transform, opacity;
+  transform: scale(0);
+  pointer-events: none;
+}
+/* line 40, ../sass/components/_waves.scss */
+.waves-effect.waves-light .waves-ripple {
+  background-color: rgba(255, 255, 255, 0.45);
+}
+/* line 43, ../sass/components/_waves.scss */
+.waves-effect.waves-red .waves-ripple {
+  background-color: rgba(244, 67, 54, 0.7);
+}
+/* line 46, ../sass/components/_waves.scss */
+.waves-effect.waves-yellow .waves-ripple {
+  background-color: rgba(255, 235, 59, 0.7);
+}
+/* line 49, ../sass/components/_waves.scss */
+.waves-effect.waves-orange .waves-ripple {
+  background-color: rgba(255, 152, 0, 0.7);
+}
+/* line 52, ../sass/components/_waves.scss */
+.waves-effect.waves-purple .waves-ripple {
+  background-color: rgba(156, 39, 176, 0.7);
+}
+/* line 55, ../sass/components/_waves.scss */
+.waves-effect.waves-green .waves-ripple {
+  background-color: rgba(76, 175, 80, 0.7);
+}
+/* line 58, ../sass/components/_waves.scss */
+.waves-effect.waves-teal .waves-ripple {
+  background-color: rgba(0, 150, 136, 0.7);
+}
+/* line 63, ../sass/components/_waves.scss */
+.waves-effect input[type="button"], .waves-effect input[type="reset"], .waves-effect input[type="submit"] {
+  border: 0;
+  font-style: normal;
+  font-size: inherit;
+  text-transform: inherit;
+  background: none;
+}
+/* line 71, ../sass/components/_waves.scss */
+.waves-effect img {
+  position: relative;
+  z-index: -1;
+}
+
+/* line 77, ../sass/components/_waves.scss */
+.waves-notransition {
+  transition: none !important;
+}
+
+/* line 81, ../sass/components/_waves.scss */
+.waves-circle {
+  transform: translateZ(0);
+  -webkit-mask-image: -webkit-radial-gradient(circle, white 100%, black 100%);
+}
+
+/* line 86, ../sass/components/_waves.scss */
+.waves-input-wrapper {
+  border-radius: 0.2em;
+  vertical-align: bottom;
+}
+/* line 90, ../sass/components/_waves.scss */
+.waves-input-wrapper .waves-button-input {
+  position: relative;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+/* line 98, ../sass/components/_waves.scss */
+.waves-circle {
+  text-align: center;
+  width: 2.5em;
+  height: 2.5em;
+  line-height: 2.5em;
+  border-radius: 50%;
+  -webkit-mask-image: none;
+}
+
+/* line 107, ../sass/components/_waves.scss */
+.waves-block {
+  display: block;
+}
+
+/* Firefox Bug: link not triggered */
+/* line 112, ../sass/components/_waves.scss */
+.waves-effect .waves-ripple {
+  z-index: -1;
+}
+
+/* line 370, ../sass/components/_color.scss */
+.medium-plugin-button.green {
+  background-color: #4CAF50 !important;
+}
+
+/* line 61, ../sass/components/_global.scss */
+.medium-plugin-button.btn, .medium-plugin-button.btn-large, .medium-plugin-button.btn-floating {
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
+}
+
+/* line 64, ../sass/components/_global.scss */
+.medium-plugin-button.btn:hover, .medium-plugin-button.btn-large:hover, .medium-plugin-button.btn-floating:hover {
+  box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.14), 0 1px 7px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -1px rgba(0, 0, 0, 0.2);
+}

@@ -1,0 +1,75 @@
+<head>
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="stylesheets/materialize.css"  media="screen,projection"/>
+    <link rel="stylesheet" href="stylesheets/options.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+</head>
+<body>
+    <script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="js/materialize.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript" src="js/options.js"></script>
+    <div class="alert" id="error-alert">
+        <span id="error-lbl"></span> 
+        <span class="closebtn" id="error-closebtn">&times;</span> 
+    </div>
+    <div class="alert success" id="success-alert">
+        <span id="success-lbl"></span> 
+        <span class="closebtn" id="success-closebtn">&times;</span> 
+    </div>
+
+    <div class="top-fixed-area"></div>
+    <div class="navigation-bar">
+        <h1 class="navigation-title">Medium Auto-Request | Settings</h1>
+    </div>
+    <div class="content">
+        <div class="container">
+            <div class="card">
+                <div class="card-content">
+                    <span class="card-title">Default Publication</span>
+                    <div class="default-publication-content">
+                        <input placeholder="Publication URL" id="publication_url" type="url">
+                        <a href="#" id="save-publication" class="email-templates-content-button green-text">
+                            Save
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-content">
+                    <span class="card-title">Email Templates</span>
+                    <div class="email-templates-content">
+                        <div class="email-templates-content-select-field input-field">
+                            <select id="template-select">
+                                <option value="" disabled>Choose template</option>
+                                <option value="1">Template 1</option>
+                                <option value="2">Template 2</option>
+                                <option value="3">Template 3</option>
+                            </select>
+                        </div>
+                        <div class="template-name">
+                            <input class="email-templates-name" id="template-name-input" disabled>
+                            <a href="" id="edit-template-name" class="email-templates-content-button orange-text">
+                                Edit Title
+                            </a>
+                            <a href="#" id="save-template-name" class="email-templates-content-button green-text">
+                                Save
+                            </a>
+                        </div>
+                        <div class="email-templates-content-text-area input-field">
+                            <textarea id="textarea1" class="materialize-textarea"></textarea>
+                        </div>
+                        <div class="email-templates-content-buttons-container">
+                            <a href="#" id="save-template" class="email-templates-content-button green-text">
+                                Save
+                            </a>
+                            <a href="#" id="set-template-default" class="email-templates-content-button red-text text-darken-3">
+                                Set as default
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
